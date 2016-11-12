@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  width: 230px;
+  height: 40px;
+  color: $color-white;
+  text-align: center;
+  border: 0;
+  @include animation();
+
+  &.orange {
+    background: $color-orange;
+
+    &:hover {
+      background: darken($color-orange, 5%);
+    }
+  }
+}
